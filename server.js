@@ -136,7 +136,7 @@ app.use('/graphql', graphqlHTTP({
 }))
 
 app.get('/hello', (req, res) => {
-    res.send('hello world')
+    res.status(200).send('hello world')
 })
 
 port = process.env.PORT || 80
