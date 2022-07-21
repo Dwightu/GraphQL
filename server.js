@@ -10,6 +10,8 @@ const {
     GraphQLNonNull
 } = require('graphql')
 const app = express()
+app.use(cors({ origin: true })); // enable origin cors
+
 
 const authors = [
     { id: 1, name: 'J. K. Rowling' },
