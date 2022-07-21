@@ -139,6 +139,8 @@ app.get('/hello', (req, res) => {
     res.send('hello world')
 })
 
-app.listen(5000, () => {
+port = process.env.PORT || 80
+
+app.listen(port, () => {
     console.log('Server is Running')
 })
